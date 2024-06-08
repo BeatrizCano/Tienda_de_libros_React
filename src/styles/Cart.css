@@ -14,6 +14,11 @@
     margin-bottom: 3px;
   }
   
+  .cart ul {
+    max-height: 60vh; /* Altura máxima del menú lateral del carrito como el 80% de la altura de la pantalla */
+    overflow-y: auto; /* Habilitar desplazamiento vertical */
+}
+  
   .cart li {
     border-bottom: 1px solid #444;
     padding-bottom: 16px;

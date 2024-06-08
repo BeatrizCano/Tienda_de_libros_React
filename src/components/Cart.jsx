@@ -1,10 +1,15 @@
 /* eslint-disable react/prop-types */
-import '../styles/Cart.css'
-import { CartIcon,  ClearCartIcon } from './Icons.jsx'
-import { useId } from 'react'
-import { useCart } from '../hooks/useCart.js'
+import { useEffect, useState } from 'react';
+import '../styles/Cart.css';
+import { CartIcon,  ClearCartIcon } from './Icons.jsx';
+import { useId } from 'react';
+import { useCart } from '../hooks/useCart.js';
 
-function CartItem ({ coverImageUrl, price, title, quantity, addToCart, decreaseFromCart }) {
+function CartItem({ id, coverImageUrl, price, title, quantity, addToCart, decreaseFromCart, removeFromCart }) {
+    const handleRemoveFromCart = () => {
+        removeFromCart({ id });
+    };
+
     return (
         <li>
             <img 
@@ -20,44 +25,60 @@ function CartItem ({ coverImageUrl, price, title, quantity, addToCart, decreaseF
                 </small>
                 <button onClick={addToCart}>+</button>
                 <button onClick={decreaseFromCart}>-</button>
+                <button onClick={handleRemoveFromCart}>Eliminar</button>
             </footer>
         </li>
-    )
+    );
 }
 
+export function Cart() {
+    const cartCheckboxId = useId();
+    const { cart, clearCart, addToCart, decreaseFromCart, removeFromCart } = useCart();
+    const [isCartCleared, setIsCartCleared] = useState(false);
 
-export function Cart () {
+    useEffect(() => {
+        if (isCartCleared) {
+            const timer = setTimeout(() => {
+                document.getElementById(cartCheckboxId).checked = false;
+                setIsCartCleared(false);
+            }, 500);
+            return () => clearTimeout(timer);
+        }
+    }, [isCartCleared, cartCheckboxId]);
 
-    const cartCheckboxId = useId()
-    const { cart, clearCart, addToCart, decreaseFromCart } = useCart()
+    const handleDecreaseFromCart = product => {
+        decreaseFromCart(product);
+    };
 
- return (
-    <>
-        <label className='cart-button' htmlFor={cartCheckboxId}>
-            <CartIcon />
-        </label>
-        <input  id={cartCheckboxId} type='checkbox' hidden />
+    const handleClearCart = () => {
+        clearCart();
+        setIsCartCleared(true);
+    };
 
-        <aside className='cart'>
-            <ul>
-              { 
-              cart.map(product => (
-                <CartItem 
-                    key={product.id}
-                    addToCart={() => addToCart(product)}
-                    decreaseFromCart={() => decreaseFromCart(product)}
-                    { ...product}
-                />
-              ))
-              
-              }
-            </ul>
+    return (
+        <>
+            <label className='cart-button' htmlFor={cartCheckboxId}>
+                <CartIcon />
+            </label>
+            <input id={cartCheckboxId} type='checkbox' hidden />
 
-            <button onClick={clearCart}>
-                <ClearCartIcon />
-            </button>
-        </aside>
-    </>
- )
-    
+            <aside className='cart'>
+                <ul>
+                    {cart.map(product => (
+                        <CartItem 
+                            key={product.id}
+                            addToCart={() => addToCart(product)}
+                            decreaseFromCart={() => handleDecreaseFromCart(product)}
+                            removeFromCart={removeFromCart}
+                            {...product}
+                        />
+                    ))}
+                </ul>
+
+                <button onClick={handleClearCart}>
+                    <ClearCartIcon />
+                </button>
+            </aside>
+        </>
+    );
 }

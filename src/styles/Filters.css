@@ -14,4 +14,18 @@
     display: flex;
     flex-direction: column;
   }
+
+  /* Estilos para dispositivos móviles */
+  @media (max-width: 600px) {
+  .filters {
+    flex-direction: column; /* Cambia la dirección a columna */
+    align-items: stretch; /* Ajusta los elementos al estiramiento vertical */
+    gap: 1.5rem; /* Reduce el espacio entre los elementos */
+  }
+
+  .filters > div {
+    width: 100%; /* Ocupa todo el ancho disponible */
+  }
+}
+
   
