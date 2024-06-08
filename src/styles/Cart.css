@@ -33,12 +33,12 @@
   .cart-button {
     align-items: center;
     background: #1976D2;
-    border-radius: 9999px;
+    border-radius: 8px;
     cursor: pointer;
     display: flex;
     height: 32px;
     justify-content: center;
-    padding: 4px;
+    padding: 6px;
     position: absolute;
     right: 8px;
     top: 8px;

@@ -2,6 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 2.5rem;
     font-size: 14px;
     font-weight: 700;
     margin: 3rem 0 2rem;
@@ -9,7 +10,8 @@
   }
   
   .filters > div {
+    flex: 1; /* Hace que cada div tome espacio equitativamente */
     display: flex;
-    gap: 1rem;
+    flex-direction: column;
   }
   

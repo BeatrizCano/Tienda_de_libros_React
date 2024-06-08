@@ -12,7 +12,7 @@ const SearchBar = ({ value, onChange }) => {
       <TextField
           variant="outlined"
           fullWidth
-          placeholder="Buscar productos..."
+          placeholder="Buscar por libro o autor..."
           value={value}
           onChange={handleInputChange}
           InputProps={{

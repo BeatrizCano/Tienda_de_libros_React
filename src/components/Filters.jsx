@@ -1,17 +1,15 @@
-import { useState } from 'react';
+import { useEffect } from 'react';
+import PropTypes from 'prop-types';
 import { useFilters } from '../hooks/useFilters';
 import SearchBar from './SearchBar';
 import PriceRangeSlider from './PriceRangoSlider';
 import '../styles/Filters.css';
 
 
-
-export function Filters() {
-    const { filters, setFilters } = useFilters();
-    const [searchError, setSearchError] = useState(false); // Estado para controlar el mensaje de error
+export function Filters({ setSearchError, products = [] }) {
+    const { filters, setFilters, filterProducts } = useFilters();
 
     const handleChangeSearchTerm = (value) => {
-        setSearchError(false); // Reiniciar el estado de error al cambiar el término de búsqueda
         setFilters(prevState => ({
             ...prevState,
             searchTerm: value
@@ -25,15 +23,29 @@ export function Filters() {
         }));
     };
 
+    useEffect(() => {
+        if (filters.searchTerm) { // Solo comprobar cuando hay un término de búsqueda
+            const results = filterProducts(products);
+            setSearchError(results.length === 0);
+        } else {
+            setSearchError(false); // Reiniciar el estado de error cuando el buscador está vacío
+        }
+    }, [filters, products, filterProducts, setSearchError]);
+
     return (
         <section className="filters">
             <div>
-                <SearchBar value={filters.searchTerm} onChange={handleChangeSearchTerm} />
-                {searchError && <p>No se encontraron resultados.</p>} {/* Mostrar mensaje de error si no se encuentran resultados */}
+                <SearchBar value={filters.searchTerm || ''} onChange={handleChangeSearchTerm} />
             </div>
             <div>
                 <PriceRangeSlider value={filters.minPrice} onChange={handleChangeMinPrice} />
-            </div>            
+            </div>
         </section>
     );
 }
+
+// Define PropTypes
+Filters.propTypes = {
+    setSearchError: PropTypes.func.isRequired,
+    products: PropTypes.array.isRequired,
+};

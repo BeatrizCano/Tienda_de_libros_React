@@ -10,7 +10,7 @@ const PriceRangeSlider = ({ value, onChange }) => {
       };
 
   return (
-    <Box sx={{ width: 300, mx: 'auto' }}>
+    <Box>
       <Typography id="range-slider" gutterBottom>
         Rango de precios
       </Typography>
@@ -20,8 +20,8 @@ const PriceRangeSlider = ({ value, onChange }) => {
         valueLabelDisplay="auto"
         min={0}
         max={100}
-        sx={{ mb: 2 }} // Estilo adicional para margen inferior
         aria-labelledby="range-slider"
+        sx={{ maxWidth: '93%' }}  // Ajustar el ancho máximo al 100% del contenedor padre 
       />
       <Typography>
         Precio: €{value}

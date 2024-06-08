@@ -1,8 +1,10 @@
 /* eslint-disable react/prop-types */
+import { useState } from "react";
 import { Filters } from "./Filters"
 import MenuBookIcon from '@mui/icons-material/MenuBook';
 
-export function Header ({searchError, setSearchError}) {
+export function Header ({ products = [] }) {
+  const [searchError, setSearchError] = useState(false);
     return (
         <>
           <h1 className="header">
@@ -11,6 +13,7 @@ export function Header ({searchError, setSearchError}) {
            <Filters 
            searchError={searchError}
            setSearchError={setSearchError}
+           products={products} // Pasamos los productos al componente filter
           /> 
         </>
       
