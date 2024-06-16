@@ -10,7 +10,7 @@
        "stock": 54,
        "publisher": "HarperCollins",
        "publishYear": "1988",
-       "coverImageUrl": "/public/img/portada_el-alquimista201612191218.jpg",
+       "coverImageUrl": "/img/portada_el-alquimista201612191218.jpg",
        "category": "books"
      },
      {
@@ -23,7 +23,7 @@
        "stock": 42,
        "publisher": "Sudamericana",
        "publishYear": "1967",
-       "coverImageUrl": "/public/img/portada_cien_annos_de_soledad.jpg",
+       "coverImageUrl": "/img/portada_cien_annos_de_soledad.jpg",
        "category": "books"
      },
      {
@@ -36,7 +36,7 @@
        "stock": 63,
        "publisher": "Secker & Warburg",
        "publishYear": "1949",
-       "coverImageUrl": "/public/img/portada_1984.jpg",
+       "coverImageUrl": "/img/portada_1984.jpg",
        "category": "books"
      },
      {
@@ -49,7 +49,7 @@
        "stock": 37,
        "publisher": "J. B. Lippincott & Co.",
        "publishYear": "1960",
-       "coverImageUrl": "/public/img/portada_to_kill_a_mockingbird.jpg",
+       "coverImageUrl": "/img/portada_to_kill_a_mockingbird.jpg",
        "category": "books"
      },
      {
@@ -62,7 +62,7 @@
        "stock": 48,
        "publisher": "Francisco de Robles",
        "publishYear": "1605",
-       "coverImageUrl": "/public/img/portada_don_quijote.jpg",
+       "coverImageUrl": "/img/portada_don_quijote.jpg",
        "category": "books"
      },
      {
@@ -75,7 +75,7 @@
        "stock": 50,
        "publisher": "Bloomsbury",
        "publishYear": "1997",
-       "coverImageUrl": "/public/img/portada_harry_potter_the_Philosopher's_Stone.jpg",
+       "coverImageUrl": "/img/portada_harry_potter_the_Philosopher's_Stone.jpg",
        "category": "books"
      },
      {
@@ -88,7 +88,7 @@
        "stock": 59,
        "publisher": "Charles Scribner's Sons",
        "publishYear": "1925",
-       "coverImageUrl": "/public/img/portada_the_great_gatsby.jpg",
+       "coverImageUrl": "/img/portada_the_great_gatsby.jpg",
        "category": "books"
      },
      {
@@ -101,7 +101,7 @@
        "stock": 45,
        "publisher": "J. B. Lippincott & Co.",
        "publishYear": "1960",
-       "coverImageUrl": "/public/img/portada_matar_a_un_ruiseñor.jpg",
+       "coverImageUrl": "/img/portada_matar_a_un_ruiseñor.jpg",
        "category": "books"
      },
      {
@@ -114,7 +114,7 @@
        "stock": 56,
        "publisher": "Thomas Egerton",
        "publishYear": "1813",
-       "coverImageUrl": "/public/img/portada_orgullo_y_prejuicio.jpg",
+       "coverImageUrl": "/img/portada_orgullo_y_prejuicio.jpg",
        "category": "books"
      },
      {
@@ -127,7 +127,7 @@
        "stock": 40,
        "publisher": "Little, Brown and Company",
        "publishYear": "1951",
-       "coverImageUrl": "/public/img/portada_the_catcher_in_the_rye.jpg",
+       "coverImageUrl": "/img/portada_the_catcher_in_the_rye.jpg",
        "category": "books"
      },
      {
@@ -140,7 +140,7 @@
        "stock": 60,
        "publisher": "The Russian Messenger",
        "publishYear": "1866",
-       "coverImageUrl": "/public/img/portada_crime_and_punishment.jpg",
+       "coverImageUrl": "/img/portada_crime_and_punishment.jpg",
        "category": "books"
      },
      {
@@ -153,7 +153,7 @@
        "stock": 47,
        "publisher": "Chatto & Windus",
        "publishYear": "1876",
-       "coverImageUrl": "/public/img/portada_aventuras_tom_sawyer.jpg",
+       "coverImageUrl": "/img/portada_aventuras_tom_sawyer.jpg",
        "category": "books"
      },
      {
@@ -166,7 +166,7 @@
        "stock": 65,
        "publisher": "The Russian Messenger",
        "publishYear": "1877",
-       "coverImageUrl": "/public/img/portada_anna_karenina.jpg",
+       "coverImageUrl": "/img/portada_anna_karenina.jpg",
        "category": "books"
      },
      {
@@ -179,7 +179,7 @@
        "stock": 43,
        "publisher": "Lippincott's Monthly Magazine",
        "publishYear": "1890",
-       "coverImageUrl": "/public/img/portada_picture_of_dorian_gray.jpg",
+       "coverImageUrl": "/img/portada_picture_of_dorian_gray.jpg",
        "category": "books"
      },
      {
@@ -192,7 +192,7 @@
        "stock": 41,
        "publisher": "Harper & Brothers",
        "publishYear": "1851",
-       "coverImageUrl": "/public/img/portada_moby_dick.jpg",
+       "coverImageUrl": "/img/portada_moby_dick.jpg",
        "category": "books"
      },
      {
@@ -205,7 +205,7 @@
        "stock": 58,
        "publisher": "Editorial Sudamericana",
        "publishYear": "1967",
-       "coverImageUrl": "/public/img/portada_one_hundred_years_of_solitude.jpg",
+       "coverImageUrl": "/img/portada_one_hundred_years_of_solitude.jpg",
        "category": "books"
      },
      {
@@ -218,7 +218,7 @@
        "stock": 46,
        "publisher": "Olympia Press",
        "publishYear": "1955",
-       "coverImageUrl": "/public/img/portada_lolita.jpg",
+       "coverImageUrl": "/img/portada_lolita.jpg",
        "category": "books"
      },
      {
@@ -231,7 +231,7 @@
        "stock": 38,
        "publisher": "Homer",
        "publishYear": "800 BC",
-       "coverImageUrl": "/public/img/portada_the_odyssey.jpg",
+       "coverImageUrl": "/img/portada_the_odyssey.jpg",
        "category": "books"
      },
      {
@@ -244,7 +244,7 @@
        "stock": 52,
        "publisher": "Lackington, Hughes, Harding, Mavor & Jones",
        "publishYear": "1818",
-       "coverImageUrl": "/public/img/portada_frankenstein.jpg",
+       "coverImageUrl": "/img/portada_frankenstein.jpg",
        "category": "books"
      },
      {
@@ -257,7 +257,7 @@
        "stock": 44,
        "publisher": "T. Egerton, Whitehall",
        "publishYear": "1813",
-       "coverImageUrl": "/public/img/portada_pride_and_prejudice.jpg",
+       "coverImageUrl": "/img/portada_pride_and_prejudice.jpg",
        "category": "books"
      },
      {
@@ -270,7 +270,7 @@
        "stock": 49,
        "publisher": "All the Year Round",
        "publishYear": "1861",
-       "coverImageUrl": "/public/img/portada_great_expectations.jpg",
+       "coverImageUrl": "/img/portada_great_expectations.jpg",
        "category": "books"
      },
      {
@@ -283,7 +283,7 @@
        "stock": 39,
        "publisher": "Archibald Constable and Company",
        "publishYear": "1897",
-       "coverImageUrl": "/public/img/portada_dracula.jpg",
+       "coverImageUrl": "/img/portada_dracula.jpg",
        "category": "books"
      },
      {
@@ -296,7 +296,7 @@
        "stock": 55,
        "publisher": "Smith, Elder & Co.",
        "publishYear": "1847",
-       "coverImageUrl": "/public/img/portada_jane_eyre.jpg",
+       "coverImageUrl": "/img/portada_jane_eyre.jpg",
        "category": "books"
      },
      {
@@ -309,7 +309,7 @@
        "stock": 64,
        "publisher": "Thomas Egerton",
        "publishYear": "1811",
-       "coverImageUrl": "/public/img/portada_sense_and_sensibility.jpg",
+       "coverImageUrl": "/img/portada_sense_and_sensibility.jpg",
        "category": "books"
      },
      {
@@ -322,7 +322,7 @@
        "stock": 51,
        "publisher": "Pétion",
        "publishYear": "1844",
-       "coverImageUrl": "/public/img/portada_count_of_monte_cristo.jpg",
+       "coverImageUrl": "/img/portada_count_of_monte_cristo.jpg",
        "category": "books"
      },
      {
@@ -335,7 +335,7 @@
        "stock": 43,
        "publisher": "The Russian Messenger",
        "publishYear": "1869",
-       "coverImageUrl": "/public/img/portada_war_and_peace.jpg",
+       "coverImageUrl": "/img/portada_war_and_peace.jpg",
        "category": "books"
      },
      {
@@ -348,7 +348,7 @@
        "stock": 57,
        "publisher": "The Russian Messenger",
        "publishYear": "1880",
-       "coverImageUrl": "/public/img/portada_brothers_karamazov.jpg",
+       "coverImageUrl": "/img/portada_brothers_karamazov.jpg",
        "category": "books"
      },
      {
@@ -361,7 +361,7 @@
        "stock": 46,
        "publisher": "A. Lacroix, Verboeckhoven & Cie.",
        "publishYear": "1862",
-       "coverImageUrl": "/public/img/portada_les_miserables.jpg",
+       "coverImageUrl": "/img/portada_les_miserables.jpg",
        "category": "books"
      },
      {
@@ -374,7 +374,7 @@
        "stock": 52,
        "publisher": "George Newnes Ltd",
        "publishYear": "1892",
-       "coverImageUrl": "/public/img/portada_sherlock_holmes.jpg",
+       "coverImageUrl": "/img/portada_sherlock_holmes.jpg",
        "category": "books"
      },
      {
@@ -387,7 +387,7 @@
        "stock": 61,
        "publisher": "Thomas Cautley Newby",
        "publishYear": "1847",
-       "coverImageUrl": "/public/img/portada_wuthering_heights.jpg",
+       "coverImageUrl": "/img/portada_wuthering_heights.jpg",
        "category": "books"
      }
    ],
