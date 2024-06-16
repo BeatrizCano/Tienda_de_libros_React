@@ -25,16 +25,18 @@ const SearchBar = ({ value, onChange }) => {
           sx={{
               mb: 2,
               backgroundColor: 'rgba(255, 255, 255, 0.87)',
+              boxShadow: '0 0 3px 3px rgb(255, 255, 255, .3)',
               borderRadius: 1,
               '& .MuiOutlinedInput-root': {
                   '& fieldset': {
                       borderColor: 'gray',
                   },
                   '&:hover fieldset': {
-                      borderColor: 'black',
+                    borderColor: 'rgb(25,114,201)',
                   },
                   '&.Mui-focused fieldset': {
                       borderColor: 'rgb(25,114,201)',
+                      boxShadow: '0 0 2px 2px rgb(25, 114, 201)',
                   },
               },
           }}

@@ -35,12 +35,14 @@ export function Cart() {
     const cartCheckboxId = useId();
     const { cart, clearCart, addToCart, decreaseFromCart, removeFromCart } = useCart();
     const [isCartCleared, setIsCartCleared] = useState(false);
+    const [isCartOpen, setIsCartOpen] = useState(false);
 
     useEffect(() => {
         if (isCartCleared) {
             const timer = setTimeout(() => {
                 document.getElementById(cartCheckboxId).checked = false;
                 setIsCartCleared(false);
+                setIsCartOpen(false);
             }, 500);
             return () => clearTimeout(timer);
         }
@@ -55,30 +57,44 @@ export function Cart() {
         setIsCartCleared(true);
     };
 
+    const handleCartButtonClick = () => {
+        const checkbox = document.getElementById(cartCheckboxId);
+        checkbox.checked = !checkbox.checked;
+        setIsCartOpen(checkbox.checked);
+    };
+
+    const handleOverlayClick = () => {
+        document.getElementById(cartCheckboxId).checked = false;
+        setIsCartOpen(false);
+    };
+
     return (
         <>
-            <label className='cart-button' htmlFor={cartCheckboxId}>
+            <label className='cart-button' htmlFor={cartCheckboxId} onClick={handleCartButtonClick}>
                 <CartIcon />
             </label>
             <input id={cartCheckboxId} type='checkbox' hidden />
 
-            <aside className='cart'>
-                <ul>
-                    {cart.map(product => (
-                        <CartItem 
-                            key={product.id}
-                            addToCart={() => addToCart(product)}
-                            decreaseFromCart={() => handleDecreaseFromCart(product)}
-                            removeFromCart={removeFromCart}
-                            {...product}
-                        />
-                    ))}
-                </ul>
+            <div className={isCartOpen ? 'cart-open' : ''}>
+                <div className='overlay' onClick={handleOverlayClick}></div>
+                <aside className='cart'>
+                    <ul>
+                        {cart.map(product => (
+                            <CartItem 
+                                key={product.id}
+                                addToCart={() => addToCart(product)}
+                                decreaseFromCart={() => handleDecreaseFromCart(product)}
+                                removeFromCart={removeFromCart}
+                                {...product}
+                            />
+                        ))}
+                    </ul>
 
-                <button onClick={handleClearCart}>
-                    <ClearCartIcon />
-                </button>
-            </aside>
+                    <button onClick={handleClearCart}>
+                        <ClearCartIcon />
+                    </button>
+                </aside>
+            </div>
         </>
     );
 }
